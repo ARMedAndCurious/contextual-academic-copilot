@@ -1,4 +1,6 @@
+# ===============================
 # Logs
+# ===============================
 logs
 *.log
 npm-debug.log*
@@ -7,59 +9,60 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
+# ===============================
+# Node
+# ===============================
+node_modules/
+dist/
+dist-ssr/
 *.local
 
+# ===============================
 # Editor directories and files
+# ===============================
 .vscode/*
 !.vscode/extensions.json
 .idea
-.DS_Store
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
 
+# ===============================
 # Environment variables
+# ===============================
 .env
 backend/.env
 frontend/.env
 
+# ===============================
 # Python
+# ===============================
 venv/
 __pycache__/
 *.pyc
 
-# Chroma DB
-chroma_db/
-
-# Node
-node_modules/
-
+# ===============================
 # OS files
-.DS_Store
-
-# Virtual environments
-.venv/
-venv/
-
-# Python cache
-__pycache__/
-*.pyc
-
-# Environment variables
-.env
-
-# OS files
+# ===============================
 .DS_Store
 Thumbs.db
 
+# ===============================
 # HuggingFace cache
+# ===============================
 .cache/
 
-# FAISS / vector files (if added later)
+# ===============================
+# FAISS vector files
+# ===============================
 *.index
 *.faiss
+
+# ===============================
+# Testing / temp files
+# ===============================
+sample.pdf
+test_*.py
+make_pdf.py
